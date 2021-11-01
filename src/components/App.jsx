@@ -9,7 +9,7 @@ function App() {
     newTime = new Date().toLocaleTimeString([], { hour12: false });
     setTime(newTime);
   }
-
+  setInterval(timeRenew, 1000);
   return (
     <div className="container">
       <h1>{time}</h1>
